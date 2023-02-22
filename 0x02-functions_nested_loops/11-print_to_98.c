@@ -20,16 +20,17 @@ void print_to_98(int n)
 				printf(", ");
 			}
 		}
-		else
+	}
+	else
+	{
+		for (items = n; items >= 98; items--)
 		{
-			for (items = n; items >= 98; items--)
+			printf("%d", items);
+			if (items != 98)
 			{
-				printf("%d", items);
-				if (items != 98)
-				{
-					printf(", ");
-				}
+				printf(", ");
 			}
 		}
-		printf("\n");
 	}
+	printf("\n");
+	
