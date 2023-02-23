@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _islower - Entry point
+ * _isupper - Entry point
  *
  * @c: recieve input from stdin
  *
