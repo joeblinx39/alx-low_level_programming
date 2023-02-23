@@ -8,12 +8,11 @@
 int main(void)
 {
 
-	unsigned long fib1 = 1, fib2 = 2, sum;
-	int i;
+	unsigned long fib1 = 1, fib2 = 2, sum, i;
 
 	printf("%lu, %lu", fib1, fib2);
 
-	for (i = 0; i < 96; i++)
+	for (i = 2; i < 98; i++)
 	{
 		sum = fib1 + fib2;
 		printf(", %lu", sum);
