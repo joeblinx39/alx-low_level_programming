@@ -2,6 +2,8 @@
 
 /**
  * print_line - Print lines if value is above zero
+ *
+ * @n: number of times the _ character is to be printed
  */
 void print_line(int n)
 {
@@ -11,6 +13,8 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
