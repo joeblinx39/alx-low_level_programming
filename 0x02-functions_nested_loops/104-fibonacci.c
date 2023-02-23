@@ -1,23 +1,38 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * print_fibonacci - prints the first 98 Fibonacci numbers
+ * fibonacci - calculates the fibonacci sequence
+ * @n1: first number to start sequence
+ * @n2: second number to start sequence
+ * @i: current index
+ * @max: maximum index to calculate
  *
  * Return: void
  */
-void print_fibonacci(void)
+void fibonacci(unsigned long int n1, unsigned long int n2, int i, int max)
 {
-	unsigned long fib1 = 1, fib2 = 2, fib_sum;
-	int i;
+	unsigned long int sum;
 
-	printf("%lu, %lu", fib1, fib2);
-	for (i = 3; i <= 98; i++)
+	if (i <= max)
 	{
-		fib_sum = fib1 + fib2;
-		printf(", %lu", fib_sum);
-		fib1 = fib2;
-		fib2 = fib_sum;
+		sum = n1 + n2;
+		printf("%lu", sum);
+		if (i != max)
+			printf(", ");
+		fibonacci(n2, sum, i + 1, max);
 	}
-	printf("\n");
+	else
+		printf("\n");
+}
+
+/**
+ * main - Entry point, prints first 98 fibonacci numbers
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	fibonacci(1, 2, 2, 98);
+	return (0);
 }
 
