@@ -7,7 +7,7 @@
  *
  * Return: (1) (Success), (0) (Failure)
  */
-int _isdigit(c)
+int _isdigit(int c)
 {
 	if (isdigit(c))
 		return (1);
