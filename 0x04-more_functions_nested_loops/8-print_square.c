@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - Print lines if value is above zero
+ * print_square - Print lines if value is above zero
  *
  * @size: number of times the _ character is to be printed
  */
