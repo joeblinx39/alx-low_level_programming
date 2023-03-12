@@ -1,5 +1,4 @@
 #include <stdio>
-#include <stdlib>
 
 /**
  * main - Prints the name of a program
