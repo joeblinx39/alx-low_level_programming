@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints all the arguments passed
+ * main - prints amount of arguments passed into it
  * @argc: argumenmt count
- * @argv: the arguments passed
+ * @argv: argument array
  * Return: 0 (success)
  */
 int main(int argc, char *argv[])
@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 
 	(void) argc;
 
-	for (index = 0; index < argc; index++)
-		printf("%s\n", argv[index]);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
